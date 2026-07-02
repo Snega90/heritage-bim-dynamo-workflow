@@ -1,4 +1,5 @@
 # Heritage & BIM Dynamo Automation Scripts
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21137963.svg)](https://doi.org/10.5281/zenodo.21137963)
 
 > Open-source Dynamo graphs automating ISO 19650-compliant documentation and Room/Space management workflows in Autodesk Revit, developed through independent professional practice and MSc research into AI-augmented heritage BIM retrofit.
 
@@ -34,7 +35,7 @@ Both scripts were developed and tested in live professional and research context
 4. Run — sheet names/titles update automatically across the selected sheet set.
 
 ### Room/Space Management
-1. Open `scripts/select-spaces-rooms.dyn` (or `clear-spaces.dyn` to reset existing Spaces first).
+1. Open `scripts/clear-rooms-and-spaces.dyn`.
 2. Confirm the category filters match your model's Room/Space setup.
 3. Run to batch-select, list, or clear Rooms/Spaces ahead of further processing (e.g. export for energy simulation).
 
@@ -50,7 +51,7 @@ This repository is released under the [MIT License](./LICENSE) — free to use, 
 
 If you use or build on this work, please cite:
 
-> Raja Sekar, S. (2025). *Heritage & BIM Dynamo Automation Scripts* [Software]. GitHub.
+> Raja Sekar, S. (2026). *Heritage BIM Dynamo Workflow: Scripts for Adaptive Reuse Coordination* [Software]. GitHub.
 > Zenodo archive: https://doi.org/10.5281/zenodo.21137964
 
 ## Author
