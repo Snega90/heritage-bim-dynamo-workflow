@@ -51,12 +51,11 @@ This repository is released under the [MIT License](./LICENSE) — free to use, 
 If you use or build on this work, please cite:
 
 > Raja Sekar, S. (2025). *Heritage & BIM Dynamo Automation Scripts* [Software]. GitHub.
-> Zenodo archive: https://doi.org/[your-DOI-once-generated]
+> Zenodo archive: https://doi.org/10.5281/zenodo.21137964
 
 ## Author
 
 **Snega Raja Sekar** — Architect (India) | Architectural Technologist (UK) | BIM Technician
-[LinkedIn: add link] · [Website: add link if available]
 
 ## Disclaimer
 
