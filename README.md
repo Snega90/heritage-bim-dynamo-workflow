@@ -22,10 +22,8 @@ Both scripts were developed and tested in live professional and research context
 
 ## Requirements
 
-- Autodesk Revit *(add your version, e.g. 2024/2025)*
-- Dynamo *(add version bundled with your Revit, e.g. 2.x)*
-- Required packages: *(list any non-default packages here — e.g. Clockwork, archi-lab, Rhythm — with version numbers; leave blank if none used)*
-
+- Autodesk Revit *(2025)*
+- Dynamo *(add version bundled with your Revit, e.g. 3.0)*
 ## How to use
 
 ### ISO 19650 Sheet Naming
