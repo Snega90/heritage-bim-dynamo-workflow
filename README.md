@@ -15,11 +15,8 @@ Both scripts were developed and tested in live professional and research context
 
 | File | Description |
 |---|---|
-| `scripts/iso19650-sheet-naming.dyn` | Automatically names/renames Revit sheets per ISO 19650 naming convention |
-| `scripts/select-spaces-rooms.dyn` | Batch selection and listing of Rooms and Spaces by category |
-| `scripts/clear-spaces.dyn` | Clears/deletes existing Spaces ahead of regeneration |
-| `diagrams/` | Supporting workflow diagrams |
-| `screenshots/` | Annotated screenshots of each graph for quick visual reference |
+| `iso19650-sheet-naming.dyn` | Automatically names/renames Revit sheets per ISO 19650 naming convention |
+| `clear-rooms-and-spaces.dyn` | Clears/deletes existing Spaces ahead of regeneration |
 | `LICENSE` | MIT License |
 
 ## Requirements
