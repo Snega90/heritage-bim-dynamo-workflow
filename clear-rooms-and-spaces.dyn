@@ -1,0 +1,330 @@
+{
+  "Uuid": "dbaf82c9-b96f-4c8d-ab04-a6b8b6d4996a",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "space",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "Id": "01bb73436fb741bfac46a7214e1812aa",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "296618a15fb944b3b80413f86aca8d65",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c77b814a826141b4ab22a14ca54d9cf1",
+          "Name": "Elements",
+          "Description": "An element class.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 547,
+      "SelectedString": "OST_MEPSpaces",
+      "Id": "6b660abf9bfc4150b6ee20a0f0dba037",
+      "NodeType": "ExtensionNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "79d8fb98f0f94fe69aff988667d04ecb",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 507,
+      "SelectedString": "OST_Rooms",
+      "Id": "011caf1e15814ac1b6e30548c6446529",
+      "NodeType": "ExtensionNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "136e13e320014f30b9e687c07b7f0286",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "Id": "11b1aaf72ec145adb2ca3505fd687c1d",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "b490e1107f174e51b41b2b4c70c00ea6",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9db0a07887b7466c8964a7daf9acb451",
+          "Name": "Elements",
+          "Description": "An element class.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "Id": "afde7998f03a4659aea35de15ee00ace",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "64383a63564141a38d242678a84ff688",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7e319be631024d84ba2726cd93ccf57a",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "84c1b9aa5a2e4d3ea736c31c518c31c4",
+          "Name": "list",
+          "Description": "A list (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list from the given inputs"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "75be4d3320fe47f481627b6a57c31f0e",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "fd5e336307a44a6abf4ba3d4b98f1ea9",
+          "Name": "element",
+          "Description": "The element to delete.\n\nElement",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "206a34cb9c404fb48350657dde4637f0",
+          "Name": "int[]",
+          "Description": "The list of element id's deleted, including any dependent elements.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Revit.Elements.Element.Delete@Revit.Elements.Element",
+      "Replication": "Auto",
+      "Description": "Delete the element and any elements that are totally dependent upon the element.\n\nElement.Delete (element: Element): int[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "c77b814a826141b4ab22a14ca54d9cf1",
+      "End": "64383a63564141a38d242678a84ff688",
+      "Id": "cac55161f1e44b2a9859001f6137fab5",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "79d8fb98f0f94fe69aff988667d04ecb",
+      "End": "296618a15fb944b3b80413f86aca8d65",
+      "Id": "54058c0fd15b40888473f32780e96a26",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "136e13e320014f30b9e687c07b7f0286",
+      "End": "b490e1107f174e51b41b2b4c70c00ea6",
+      "Id": "14f833fff88149a0b4a6885f03132ffa",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9db0a07887b7466c8964a7daf9acb451",
+      "End": "7e319be631024d84ba2726cd93ccf57a",
+      "Id": "443efa5535ad4ea1bac2a01bd5810215",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "84c1b9aa5a2e4d3ea736c31c518c31c4",
+      "End": "fd5e336307a44a6abf4ba3d4b98f1ea9",
+      "Id": "2b514a1ba2504ef1afe3625bd384a284",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "EnableLegacyPolyCurveBehavior": null,
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "3.2",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "8.1",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "3.2.1.5366",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "01bb73436fb741bfac46a7214e1812aa",
+        "Name": "All Elements of Category",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -360.88472272465333,
+        "Y": -181.29561043433498
+      },
+      {
+        "Id": "6b660abf9bfc4150b6ee20a0f0dba037",
+        "Name": "Categories",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -640.7782486935475,
+        "Y": -181.6137105175983
+      },
+      {
+        "Id": "011caf1e15814ac1b6e30548c6446529",
+        "Name": "Categories",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -642.6779871882013,
+        "Y": -24.568661626220262
+      },
+      {
+        "Id": "11b1aaf72ec145adb2ca3505fd687c1d",
+        "Name": "All Elements of Category",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -353.28576874603834,
+        "Y": -22.35082304830314
+      },
+      {
+        "Id": "afde7998f03a4659aea35de15ee00ace",
+        "Name": "List Create",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -28.429207250150284,
+        "Y": -136.65323281079242
+      },
+      {
+        "Id": "75be4d3320fe47f481627b6a57c31f0e",
+        "Name": "Element.Delete",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 187.3896622628272,
+        "Y": -137.42455390318472
+      }
+    ],
+    "Annotations": [],
+    "X": 511.8396358082515,
+    "Y": 225.99291861333438,
+    "Zoom": 0.6352716534172568
+  }
+}
