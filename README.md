@@ -7,7 +7,7 @@
 
 This repository contains two Dynamo automation tools developed to reduce manual, repetitive tasks in BIM documentation and heritage retrofit modelling:
 
-1. **ISO 19650 Sheet Naming Automation** — automatically generates and applies ISO 19650-compliant sheet naming conventions across a Revit project.
+1. **ISO 19650 Sheet Naming Automation** — automatically generates and applies ISO 19650-compliant sheet/View naming conventions across a Revit project.
 2. **Room/Space Selection & Management** — automates the selection, listing, and cleanup of Rooms and Spaces ahead of energy simulation handoff (e.g. to IESVE via Pollination).
 
 Both scripts were developed and tested in live professional and research contexts and are shared here so other BIM practitioners, students, and researchers can adapt them for their own projects.
@@ -16,7 +16,7 @@ Both scripts were developed and tested in live professional and research context
 
 | File | Description |
 |---|---|
-| `iso19650-sheet-naming.dyn` | Automatically names/renames Revit sheets per ISO 19650 naming convention |
+| `iso19650-sheet-naming.dyn` | Automatically names/renames Revit sheets/views per ISO 19650 naming convention |
 | `clear-rooms-and-spaces.dyn` | Clears/deletes existing Spaces ahead of regeneration |
 | `LICENSE` | MIT License |
 
